@@ -1,0 +1,337 @@
+@charset 'utf-8';
+@import './_common';
+
+*{
+    margin: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.wrapper{
+    overflow: hidden;
+}
+.header{
+    height: 760px;
+    min-width: 1300px;
+    background-image: url('../../img/page-cafe/bg_mainimage.jpg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+    
+    &-inner{
+        min-width: 1300px;
+        height: 760px;
+        padding: 0 100px;
+        position: relative;
+    }
+    &-icon{
+        display: none;
+    }
+
+    &-menu{
+        height: 50px;
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-nav{   
+        &__list{
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            padding: 0;
+            color: #fffff7;
+        }
+        &__item{
+            padding-right: 30px;
+
+            &--end{
+                padding: 0;
+            }
+        }
+    }
+    &-subtitle{
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &-title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.concept{
+    &-inner{
+        min-width: 1300px;
+        padding: 120px 100px;
+        background-image: url('../../img/page-cafe/body_bg.jpg');
+    }
+    &-first{
+        
+        padding-bottom: 80px;
+        display: flex;
+        justify-content: start;
+        &__left{
+            flex-basis: 50%;
+        }
+        &__title{
+            color: $titleFColor;
+            font-size: 63px;
+            line-height: 1.11;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        &__subtitle{
+            color: $subtitleFxtColor;
+            font-size: 31px;
+            line-height: 1.61;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        &__txt{
+            margin: 16px 0;
+            line-height: 1.7;
+            width: 500px;
+            color: $conceptTxtColor;
+        }
+        &__right{
+            flex-basis: 50%;
+            padding-left: 60px;
+        }
+    }
+    &-second{
+        display: flex;
+        justify-content: start;
+        &__left{
+            flex-basis: 50%;
+        }
+        &__title{
+            color: $titleFColor;
+            font-size: 63px;
+            line-height: 1.11;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        &__subtitle{
+            color: $subtitleFxtColor;
+            font-size: 31px;
+            line-height: 1.61;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        &__txt{
+            margin: 16px 0;
+            line-height: 1.7;
+            color: $conceptTxtColor;
+        }
+        &__right{
+            padding-left: 60px;
+            flex-basis: 50%;
+        }
+    }
+}
+.infomation{
+    &-inner{
+        margin: 0 auto;
+        min-width: 1300px;
+        padding: 100px 0 85px 0;
+        background-image: url('../../img/page-cafe/information_bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+    &-title{
+        color: rgba(#fffff7, 65%);
+        font-size: 63px;
+        line-height: 1.11;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    &-subtitle{
+        color: #fff;
+        font-size: 31px;
+        line-height: 1.61;
+        font-family: 'Noto Sans JP', sans-serif;
+        padding-bottom: 40px;
+    }
+    &-cont{
+        display: flex;
+        width: 825px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 50px;
+        &__left{
+            display: block;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__right{
+            width: 410px;
+            padding-left: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        &__line{
+            width: 154px;
+            height: auto;
+        }
+        &__title{
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: lighter;
+            color: $txtColor;
+        }
+        &__txt{
+            color: #5d6d85;
+        }
+    }
+}
+
+.menu{
+    &-inner{
+        padding: 100px;
+        min-width: 1300px;
+        background-image: url('../../img/page-cafe/body_bg.jpg');
+        text-align: center;
+        color: $txtColor;
+    }
+    &-title{
+        color: $titleFColor;
+        font-size: 63px;
+        line-height: 1.11;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    &-subtitle{
+        color: $subtitleFxtColor;
+        font-size: 31px;
+        line-height: 1.61;
+        font-family: 'Noto Sans JP', sans-serif;      
+    }
+    &-cont{
+        margin: 30px auto;
+        max-width: 1170px;
+        background-color: #fff;
+        padding: 50px 0;
+    }
+    &-list{
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        list-style-type: none;
+    }
+    &-item{
+        &__txt{
+            padding-top: 25px;
+        }
+        &__price{
+            color: #d4490e;
+        }
+    }
+
+}
+
+.access{
+    &-inner{
+        padding: 100px;
+        min-width: 1300px;
+        text-align: center;
+        background-color: #fffff7;
+        margin: 0 auto;
+    }
+    &-title{
+        color: $titleFColor;
+        font-size: 63px;
+        line-height: 1.11;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    &-subtitle{
+        color: $subtitleFxtColor;
+        font-size: 31px;
+        line-height: 1.61;
+        font-family: 'Noto Sans JP', sans-serif;  
+    }
+    &-map{
+        width: 1170px;
+        height: 341px;
+        margin: 30px auto;
+        position: relative;
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+            position: absolute;            
+        }
+        &__sample{
+            display: block;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            color: rgba(#5d6d85, 43%);
+            font-size: 101px;
+        }
+    }
+}
+.footer{
+    &-inner{
+        padding: 50px 0;
+        min-width: 1300px;
+        text-align: center;
+        background-image: url('../../img/page-cafe/bg_footer_1.jpg');
+        color: #fffff7;
+    }
+    &-logo{
+        margin: 0 auto;
+        width: 169px;
+        padding-bottom: 30px;
+    }
+    &-address{
+        font-style: normal;
+        line-height: 1.875;
+        padding-bottom: 20px;
+    }
+    &-mailbtn{
+        margin: 0 auto;
+        width: 154px;
+        height: 33px;
+        background-color: #f1dcaf;
+        position: relative;
+        &__icon{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &-nav{
+        &__list{
+            margin: 50px 0;
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        &__item{
+            padding-right: 30px;
+            &--end{
+                padding: 0;
+            }
+        }
+    }
+    &-copylight{
+        a{
+            text-decoration: underline;
+        }
+    }
+}
+.back-btn{
+    position: relative;
+    img{
+        position: absolute;
+        bottom: 100px;
+        right: 100px;
+    }
+}

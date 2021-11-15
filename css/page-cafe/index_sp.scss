@@ -1,0 +1,407 @@
+@charset 'utf-8';
+@import './_common';
+
+*{
+    margin: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.wrapper{
+    overflow: hidden;
+}
+.header{
+    height: 320px;
+    max-width: 100%;
+    background-image: url('../../img/page-cafe/bg_mainimage.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+    &-inner{
+        max-width: 100%;
+        height: 320px;
+        position: relative;
+    }
+    
+    &-icon{
+        position: relative;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        z-index: 200;
+        span{
+            display: inline-block;
+            transition: all 0.4s;
+            position: absolute;
+            left: 14px;
+            height: 3px;
+            background-color: #fffff7;
+            border-radius: 2px;
+            width: 45%;
+            &:nth-of-type(1){
+                top: 0;
+            }
+            &:nth-of-type(2){
+                top: 8px;
+            }
+            &:nth-of-type(3){
+                top: 16px;
+            }
+        }
+        &.active{
+            span{
+                &:nth-of-type(1){
+                    top: 3px;
+                    left: 18px;
+                    transform: translateY(6px) rotate(-45deg);
+                    width: 30%;
+                }
+                &:nth-of-type(2){
+                    opacity: 0;
+                }
+                &:nth-of-type(3){
+                    top: 15px;
+                    left: 18px;
+                    transform: translateY(-6px) rotate(45deg);
+                    width: 30%;
+                }
+            }
+        }
+    }
+    &-menu{
+        height: 50px;
+        padding: 30px 10px;
+        display: flex;
+        justify-content: space-between;
+        &__logo{
+            img{
+                width: 65%;
+            }
+        }
+    }
+    &-nav{
+        position: absolute;
+        background-image: url('../../img/page-cafe//page-cafe/bg_footer_1.jpg');
+        padding: 6.5vh;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+        &.show{
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            z-index: 100;
+        }
+        &__list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style-type: none;
+            padding: 0;
+            color: #fffff7;
+        }
+        &__item{
+            padding: 10px 0;
+        }
+    }
+    &-subtitle{
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &-title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.concept{
+    &-inner{
+        max-width: 100%;
+        padding: 120px 10px;
+        background-image: url('../../img/page-cafe//page-cafe/body_bg.jpg');
+    }
+    &-first{
+        padding-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        &__left{
+            flex-basis: 100%;
+        }
+        &__title{
+            color: $titleFColor;
+            font-size: 48px;
+            line-height: 1.11;
+            font-family: 'Noto Sans JP', sans-serif;
+            text-align: center;
+        }
+        &__subtitle{
+            color: $subtitleFxtColor;
+            font-size: 24px;
+            line-height: 1.61;
+            font-family: 'Noto Sans JP', sans-serif;
+            text-align: center;
+        }
+        &__txt{
+            margin: 16px 0;
+            line-height: 1.7;
+            max-width: 100%;
+            color: $conceptTxtColor;
+        }
+        &__right{
+            flex-basis: 100%;
+        }
+    }
+    &-second{
+        display: flex;
+        flex-direction: column;
+        &__left{
+            order: 2;
+            flex-basis: 100%;
+        }
+        &__title{
+            text-align: center;
+            color: $titleFColor;
+            font-size: 48px;
+            line-height: 1.11;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        &__subtitle{
+            text-align: center;
+            color: $subtitleFxtColor;
+            font-size: 24px;
+            line-height: 1.61;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        &__txt{
+            margin: 16px 0;
+            line-height: 1.7;
+            color: $conceptTxtColor;
+        }
+        &__right{
+            order: 1;
+            flex-basis: 100%;
+        }
+    }
+}
+.infomation{
+    &-inner{
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 100px 0 85px 0;
+        background-image: url('../../img/page-cafe/information_bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+    &-title{
+        color: rgba(#fffff7, 65%);
+        font-size: 48px;
+        line-height: 1.11;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    &-subtitle{
+        color: #fff;
+        font-size: 24px;
+        line-height: 1.61;
+        font-family: 'Noto Sans JP', sans-serif;
+        padding-bottom: 40px;
+    }
+    &-cont{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 20px;
+        background-color: #fff;
+        padding: 50px;
+        &__left{
+            display: block;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__right{
+            padding-top: 30px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        &__line{
+            width: 154px;
+            height: auto;
+        }
+        &__title{
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: lighter;
+            color: $txtColor;
+        }
+        &__txt{
+            color: #5d6d85;
+        }
+    }
+}
+
+.menu{
+    &-inner{
+        padding: 20px;
+        max-width: 100%;
+        background-image: url('../../img/page-cafe/body_bg.jpg');
+        text-align: center;
+        color: $txtColor;
+    }
+    &-title{
+        color: $titleFColor;
+        font-size: 48px;
+        line-height: 1.11;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    &-subtitle{
+        color: $subtitleFxtColor;
+        font-size: 24px;
+        line-height: 1.61;
+        font-family: 'Noto Sans JP', sans-serif;      
+    }
+    &-cont{
+        margin: 30px auto;
+        max-width: 1170px;
+    }
+    &-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+        list-style-type: none;
+    }
+    &-item{
+        &__inner{
+            background-color: #fff;
+            margin: 30px auto;
+            padding: 30px;
+        }
+        &__txt{
+            padding-top: 25px;
+        }
+        &__price{
+            color: #d4490e;
+        }
+
+        &__img{
+            img{
+                margin: 0 auto;
+            }
+        }
+    }
+
+}
+
+.access{
+    &-inner{
+        padding: 100px 0;
+        max-width: 100%;
+        text-align: center;
+        background-color: #fffff7;
+        margin: 0 auto;
+    }
+    &-title{
+        color: $titleFColor;
+        font-size: 48px;
+        line-height: 1.11;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    &-subtitle{
+        color: $subtitleFxtColor;
+        font-size: 24px;
+        line-height: 1.61;
+        font-family: 'Noto Sans JP', sans-serif;  
+    }
+    &-map{
+        width: 100%;
+        height: 110px;
+        margin: 30px 0;
+        position: relative;
+        img{
+            width: 100%;
+            height: auto;
+            position: absolute;            
+        }
+        &__sample{
+            display: block;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            color: rgba(#5d6d85, 43%);
+            font-size: 42px;
+        }
+    }
+}
+.footer{
+    &-inner{
+        padding: 50px 0;
+        max-width: 100%;
+        text-align: center;
+        background-image: url('../../img/page-cafe/bg_footer_1.jpg');
+        color: #fffff7;
+    }
+    &-logo{
+        margin: 0 auto;
+        width: 169px;
+        padding-bottom: 30px;
+    }
+    &-address{
+        font-style: normal;
+        line-height: 1.875;
+        padding-bottom: 20px;
+    }
+    &-mailbtn{
+        margin: 0 auto;
+        width: 154px;
+        height: 33px;
+        background-color: #f1dcaf;
+        position: relative;
+        &__icon{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &-nav{
+        &__list{
+            margin: 50px 0;
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            padding: 0;
+        }
+        &__item{
+            &--end{
+                padding: 0;
+            }
+        }
+    }
+    &-copylight{
+        a{
+            text-decoration: underline;
+        }
+    }
+}
+.back-btn{
+    position: relative;
+    img{
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+    }
+}

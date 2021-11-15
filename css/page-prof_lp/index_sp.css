@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+*{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+}
+
+.header-main{
+    height: calc(100vh - 50px);
+    background-position: center center;
+    background-size: cover;
+    background-image: url('../../img/page-prof_lp/mainvisual1-1.jpg');
+}
+
+.header-menu{
+    padding: 0 4%;
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo{
+    width: auto;
+    height: 50px;
+    padding: 5% 0;
+
+}
+
+.header-logo img{
+    width: 100%;
+    height: calc(50px - 20%);
+}
+
+.header-nav{
+    width: 100px;
+    height: 50px;
+}
+
+.header-nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.header-nav__item{
+    font-size: 14px;
+    padding: 0 ;
+    list-style: none;
+}
+
+.about-inner{
+    margin: 0 auto;
+    padding: 50px 4%;
+    width: 100%;
+}
+
+.about-title{
+    display: inline;
+    font-size: 24px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.about-cont{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.about-prof{
+    width: 100%;
+    text-align: start;
+}
+
+.about-text{
+    font-size: 12px;
+    text-align: start;
+}
+
+.about-name{
+    font-size: 16px;
+    padding-bottom: 10px;
+    text-align: start;
+}
+
+.bicycle-inner{
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.bicycle-title{
+    display: inline;
+    font-size: 28px;
+    border-bottom: 1px solid #000;
+}
+
+.bicycle-list{
+    list-style: none;
+    padding-top: 50px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bicycle-item{
+    padding-top: 30px;
+}
+
+.bicycle-item__img img{
+    width: 90%;
+    height: auto;
+}
+
+.bicycle-item__start{
+    padding-top: 0;
+}
+
+.bicycle-item__title{
+    font-size: 14px;
+    line-height: 2.5;
+}
+
+.bicycle-item__txt{
+    font-size: 12px;
+}
+
+.footer-copyright{
+    font-size: 12px;
+    color: gray;
+}

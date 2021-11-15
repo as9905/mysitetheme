@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+*{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+.header{
+    min-width: 600px;
+}
+
+.header-main{
+    height: 600px;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('../../img/page-prof_lp/mainvisual1-1.jpg');
+}
+
+.header-menu{
+    margin: 0 auto;
+    width: 960px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo img{
+    width: auto;
+    height: 80px;
+    padding: 10px 0;
+}
+
+.header-nav{
+    width: 150px;
+    height: 100px;
+}
+
+.header-nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header-nav__item{
+    list-style: none;
+}
+
+.about-inner{
+    margin: 0 auto;
+    padding: 50px 4%;
+    width: 960px;
+}
+
+.about-title{
+    display: inline;
+    font-size: 32px;
+    border-bottom: 1px solid #000;
+}
+
+.about-cont{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.about-prof{
+    width: 500px;
+    padding-left: 50px;
+    text-align: start;
+}
+
+.about-name{
+    padding-bottom: 10px;
+    text-align: start;
+}
+
+.bicycle-inner{
+    margin: 0 auto;
+    width: 960px;
+    padding: 0 4% 100px 4%;
+}
+
+.bicycle-title{
+    display: inline;
+    font-size: 32px;
+    border-bottom: 1px solid #000;
+}
+
+.bicycle-list{
+    list-style: none;
+    padding-top: 50px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bicycle-item{
+    flex-basis: 30%;
+    padding-left: 10px;
+    height: auto;
+}
+
+.bicycle-item__img img{
+    width: 300px;
+    height: auto;
+}
+
+.bicycle-item__start{
+    padding-left: 0;
+}
+
+.footer-copyright{
+    font-size: 12px;
+    color: gray;
+}
