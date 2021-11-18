@@ -118,6 +118,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/img/page-cafe/map.jpg" alt="アクセスマップ">
                     <figcaption class="access-map__sample">SAMPLE</figcaption><!-- /.access-map__sample -->
                 </figure><!-- /.access-map -->
+                <p>aiueo</p>
                 <div class="access-info">
                     <p>JRなんとか駅なんとか口より徒歩３分です。</p>
                     <p>なんとか線なんとか駅なんとか口より徒歩５分です。</p>
