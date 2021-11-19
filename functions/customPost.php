@@ -22,3 +22,33 @@
                                     ) //サポートの設定
             ));
         }
+
+
+        function create_cafe_product_fields()
+{
+    add_meta_box(
+        'banner_setting', //編集画面セクションのHTML ID
+        'カフェ商品カスタムフィールド', //編集画面セクションのタイトル
+        'insert_cafe_product_fields', //編集画面セクションにHTML出力する関数
+        'cafe_product', //投稿タイプ名(postにすると、デフォルトである投稿に追加)
+        'normal' //編集画面セクションが表示される部分
+    );
+}
+
+add_action('admin_menu', 'create_cafe_product_fields');
+
+
+function insert_cafe_product_fields(){
+    global $post;
+    echo '価格:<input type="text" name="price" value="'.get_post_meta($post->ID, 'price', true).'">';
+}
+
+function save_cafe_product_fields( $post_id ) {
+    if (!empty($_POST['price'])) {
+        update_post_meta($post_id, 'price', $_POST['price']);
+    } else {
+        delete_post_meta($post_id, 'price');
+    }
+}
+
+add_action('save_post', 'save_cafe_product_fields');
