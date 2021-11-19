@@ -14,6 +14,7 @@
                 'has_archive' => true,  //アーカイブを有効にする
                 'hierarchical' => false,    //ページ階層の指定
                 'menu_positon' => 5,
+                'menu_icon' => 'dashicons-store',
                 'supports' => array('title','editor','thumbnail','custom-fields','excerpt','author','trackback','comments','revisions','page-attributes') //サポートの設定
             ));
         }
