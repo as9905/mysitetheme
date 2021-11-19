@@ -40,7 +40,7 @@ add_action('admin_menu', 'create_cafe_product_fields');
 
 function insert_cafe_product_fields(){
     global $post;
-    echo '価格:<input type="text" name="price" value="'.get_post_meta($post->ID, 'price', true).'">';
+    echo '価格:<input type="text" name="price" value="'.esc_attr(get_post_meta($post->ID, 'price', true)).'">';
 }
 
 function save_cafe_product_fields( $post_id ) {
