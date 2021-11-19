@@ -14,6 +14,11 @@
                 'has_archive' => true,  //アーカイブを有効にする
                 'hierarchical' => false,    //ページ階層の指定
                 'menu_positon' => 5,
-                'supports' => array('title','editor','thumbnail','custom-fields','excerpt','author','trackback','comments','revisions','page-attributes') //サポートの設定
+                'supports' => array('title','editor',
+                                    'thumbnail','custom-fields',
+                                    'excerpt','author',
+                                    'trackback','comments',
+                                    'revisions','page-attributes'
+                                    ) //サポートの設定
             ));
         }
