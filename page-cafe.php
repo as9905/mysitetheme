@@ -95,7 +95,7 @@
                                 </figure><!-- /.menu-item__img -->
                                 <div class="menu-item__txt">
                                     <p class="menu-item__name"><?php the_title(); ?></p><!-- /.menu-item__name -->
-                                    <p class="menu-item__price"><?php the_excerpt(); ?></p><!-- /.menu-item__price -->
+                                    <p class="menu-item__price"><?php echo esc_html(get_post_meta($post->ID, 'price', true)); ?>円</p><!-- /.menu-item__price -->
                                 </div><!-- /.menu-item__txt -->
                             </div><!-- /.menu-item__inner -->
                         </li><!-- /.menu-item -->
