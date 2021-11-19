@@ -81,7 +81,8 @@
                     <?php
                             $args = array(
                                 'numberposts' => 3,  //表示する記事数
-                                'post_type' => 'cafe_product'  //投稿タイプ名
+                                'post_type' => 'cafe_product',  //投稿タイプ名
+                                'post_status'      => 'publish' //カスタム投稿の公開・非公開
                             );
                             $customPosts = get_posts($args);
                             if($customPosts) :
