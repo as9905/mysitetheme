@@ -14,7 +14,44 @@
                 'has_archive' => true,  //アーカイブを有効にする
                 'hierarchical' => false,    //ページ階層の指定
                 'menu_positon' => 5,
+
+                'supports' => array(    //サポートの設定
+                                    'title','editor',
+                                    'thumbnail','custom-fields',
+                                    'excerpt','author',
+                                    'trackback','comments',
+                                    'revisions','page-attributes'
+                                    ),
+
                 'menu_icon' => 'dashicons-store',
-                'supports' => array('title','editor','thumbnail','custom-fields','excerpt','author','trackback','comments','revisions','page-attributes') //サポートの設定
             ));
         }
+
+
+    function create_cafe_product_fields(){
+        add_meta_box(
+            'cafe_product_price_setting', //編集画面セクションのHTML ID(管理画面にcssを適用するために使用する)
+            'カフェ商品カスタムフィールド', //編集画面セクションのタイトル
+            'insert_cafe_product_fields', //編集画面セクションにHTML出力する関数
+            'cafe_product', //投稿タイプ名(postにすると、デフォルトである投稿に追加)
+            'normal' //編集画面セクションが表示される部分
+        );
+    }
+
+add_action('admin_menu', 'create_cafe_product_fields');
+
+
+function insert_cafe_product_fields(){
+    global $post;
+    echo '価格:<input type="text" name="price" value="'.esc_attr(get_post_meta($post->ID, 'price', true)).'">';
+}
+
+function save_cafe_product_fields( $post_id ) {
+    if (!empty($_POST['price'])) {
+        update_post_meta($post_id, 'price', $_POST['price']);
+    } else {
+        delete_post_meta($post_id, 'price');
+    }
+}
+
+add_action('save_post', 'save_cafe_product_fields');
