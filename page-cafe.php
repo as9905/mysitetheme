@@ -78,39 +78,31 @@
                 <p class="menu-subtitle">メニュー</p><!-- /.menu-subtitle -->
                 <div class="menu-cont">
                     <ul class="menu-list">
+                    <?php
+                            $args = array(
+                                'numberposts' => 3,  //表示する記事数
+                                'post_type' => 'cafe_product',  //投稿タイプ名
+                                'post_status'      => 'publish' //カスタム投稿の公開・非公開
+                            );
+                            $customPosts = get_posts($args);
+                            if($customPosts) :
+                                foreach($customPosts as $post):setup_postdata($post);                        
+                    ?>
                         <li class="menu-item">
                             <div class="menu-item__inner">
                                 <figure class="menu-item__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/page-cafe/ph_menu01.jpg" alt="コーヒーメニュー1">
+                                <?php the_post_thumbnail(); ?>
                                 </figure><!-- /.menu-item__img -->
                                 <div class="menu-item__txt">
-                                    <p class="menu-item__name">なんとかコーヒー</p><!-- /.menu-item__name -->
-                                    <p class="menu-item__price">450円</p><!-- /.menu-item__price -->
+                                    <p class="menu-item__name"><?php the_title(); ?></p><!-- /.menu-item__name -->
+                                    <p class="menu-item__price"><?php echo esc_html(get_post_meta($post->ID, 'price', true)); ?>円</p><!-- /.menu-item__price -->
                                 </div><!-- /.menu-item__txt -->
                             </div><!-- /.menu-item__inner -->
                         </li><!-- /.menu-item -->
-                        <li class="menu-item">
-                            <div class="menu-item__inner">
-                                <figure class="menu-item__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/page-cafe/ph_menu02.jpg" alt="コーヒーメニュー2">
-                                </figure><!-- /.menu-item__img -->
-                                <div class="menu-item__txt">
-                                    <p class="menu-item__name">なんとかコーヒー</p><!-- /.menu-item__name -->
-                                    <p class="menu-item__price">470円</p><!-- /.menu-item__price -->
-                                </div><!-- /.menu-item__txt -->
-                            </div><!-- /.menu-item__inner -->
-                        </li><!-- /.menu-item -->
-                        <li class="menu-item">
-                            <div class="menu-item__inner">
-                                <figure class="menu-item__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/page-cafe/ph_menu03.jpg" alt="コーヒーメニュー3">
-                                </figure><!-- /.menu-item__img -->
-                                <div class="menu-item__txt">
-                                    <p class="menu-item__name">テイクアウトコーヒー</p><!-- /.menu-item__name -->
-                                    <p class="menu-item__price">480円</p><!-- /.menu-item__price -->
-                                </div><!-- /.menu-item__txt -->
-                            </div><!-- /.menu-item__inner -->
-                        </li><!-- /.menu-item -->
+                        <?php endforeach; ?>
+                        <?php else: ?>
+                            <p>カスタム投稿がありません</p>
+                        <?php endif; ?>
                     </ul><!-- /.menu-list -->
                 </div><!-- /.menu-cont -->
                 <div class="menu-msg">
