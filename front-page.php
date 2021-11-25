@@ -117,7 +117,7 @@
                     <p class="contact-txt">
                         お問い合わせは<a href="https://forms.gle/CbiQwahZYbauRMSD8">こちらのGoogleフォーム</a>からお願いいたします。<br />
                         近日中に折り返しご連絡いたします。<br />
-                        なお、お問い合わせの際に入力された個人情報は折り返しの連絡のみに使用させていただきます。
+                        なお、お問い合わせの際に入力された個人情報は折り返しの連絡のみに使用させていただきます。<!-- aiueo -->
                     </p><!-- /.contact-txt -->
                 </div><!-- /.contact-cont -->
             </div><!-- /.contact-inner -->
