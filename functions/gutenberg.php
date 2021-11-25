@@ -1,6 +1,10 @@
 <?php
-    add_action('after_setup_theme',function(){
-        
-        //グーテンベルクカスタマイズをテーマで有効にする
-        add_theme_support('wp-block-style');
-    });
+    /* ========================================================
+管理画面ブロックエディタ用CSSの追加
+=========================================================*/
+add_action( 'after_setup_theme', function(){
+	// ブロックエディタ用スタイル機能をテーマに追加 
+	add_theme_support( 'editor-styles' );
+	// ブロックエディタ用CSSの読み込み
+	add_editor_style();
+});
