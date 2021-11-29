@@ -11,6 +11,16 @@
     </noscript>
     <div class="body-wrapper">
         <?php get_template_part('parts/single/header-nav'); ?>
-            <p>single.phpです</p>
+        <?php
+                if(have_posts()):
+                    while(have_posts()):the_post();
+            ?>
+        <article class="blog">
+            <h1 class="blog-post__title"><?php the_title(); ?></h1><!-- /.blog-post__title -->
+            <div class="blog-post__content">
+                <?php the_content(); ?>
+            </div><!-- /.blog-post__content -->
+        </article><!-- /.blog -->
+        <?php endwhile; endif; ?>
         <?php get_template_part('parts/single/footer'); ?>
     <!-- </div> -->
