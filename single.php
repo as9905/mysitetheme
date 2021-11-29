@@ -3,6 +3,13 @@
 
 <head>
     <?php get_template_part('parts/single/header'); ?>
+    <style>
+        .midashi{
+            color: #fff;
+            background-color: yellow;
+            padding: 5px;
+        }
+    </style>
 </head>
 
 <body>
