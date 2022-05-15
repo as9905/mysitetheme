@@ -19,18 +19,18 @@
                 <h2 class="about-title">当サイトについて</h2><!-- /.about-title -->
                 <div class="about-cont">
                     <p class="about-sentence">
-                        サイトをご覧いただきありがとうございます。<br />
+                        サイトをご覧いただきありがとうございます。<br>
                         当サイトは、自身で制作した作品の記録です。</p>
-                    <p class="about-sentence">当Webサイトで使用している言語<br />
+                    <p class="about-sentence">当Webサイトで使用している言語<br>
                         HTML/CSS（Sass）/JavaScript</p>
-                    <p class="about-sentence">学習した言語<br />
+                    <p class="about-sentence">学習した言語<br>
                         HTML/CSS（Sass）/JavaScript/PHP</p>
                     <p class="about-sentence">
-                        制作に使用したアプリケーション<br />
-                        Visual Studio Code/Figma/Prepross/Photoshop</p>
+                        制作に使用したアプリケーション<br>
+                        Visual Studio Code/Figma/Prepros/Photoshop</p>
                     <p class="about-sentence about-sentence--end">
-                        ※注意※<br />
-                        当サイトはJavaScriptを使用しています。JavaScriptの設定をオンにしてください。<br />
+                        ※注意※<br>
+                        当サイトはJavaScriptを使用しています。JavaScriptの設定をオンにしてください。<br>
                         仮公開のため、一部表示が崩れています。ご了承下さい。
                     </p>
                 </div><!-- /.about-cont -->
@@ -41,13 +41,11 @@
                 <h2 class="profile-title">自己紹介</h2><!-- /.profile-title -->
                 <h3 class="profile-name">Kayo Osawa</h3><!-- /.profile-name -->
                 <div class="profile-cont">
-                    <p class="profile-sentence">はじめまして、大澤　佳世（おおさわ　かよ）と申します。<br />
-                        20代の重度身体障害者です。<br />
-                        養護学校（特別支援学校）を卒業後、事務のお仕事に携わりましたが、体調を崩したため退職しました。<br />
-                        その後、しばらく療養。
-                    </p>
-                    <p class="profile-sentence profile-sentence--end">
-                        現在は、就労移行支援事業所にてWebプログラミングや、Officeのスキルを学びながら就活をしています。<br />
+                    <p class="profile-sentence">はじめまして、おおさわ　かよと申します。<br>
+                        20代の重度身体障害者です。<br>
+                        養護学校（特別支援学校）を卒業後、事務のお仕事に携わりましたが、体調を崩したため退職しました。<br>
+                        しばらく療養した後、就労移行支援事業所にて、WebプログラミングやOfficeのスキルを学びました。<br>
+                        現在は、短時間勤務で働いています。
                     </p>
                 </div><!-- /.profile-cont -->
             </div><!-- /.profile-inner -->
@@ -115,8 +113,8 @@
                 <h2 class="contact-title">お問合せ</h2><!-- /.contact-title -->
                 <div class="contact-cont">
                     <p class="contact-txt">
-                        お問い合わせは<a href="https://forms.gle/CbiQwahZYbauRMSD8">こちらのGoogleフォーム</a>からお願いいたします。<br />
-                        近日中に折り返しご連絡いたします。<br />
+                        お問い合わせは<a href="https://forms.gle/CbiQwahZYbauRMSD8">こちらのGoogleフォーム</a>からお願いいたします。<br>
+                        近日中に折り返しご連絡いたします。<br>
                         なお、お問い合わせの際に入力された個人情報は折り返しの連絡のみに使用させていただきます。<!-- aiueo -->
                     </p><!-- /.contact-txt -->
                 </div><!-- /.contact-cont -->
