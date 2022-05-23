@@ -2,7 +2,7 @@
 <html lang="ja">
 
 <head>
-    <?php get_template_part('parts/front-page/header'); ?>
+    <?php get_template_part('parts/page-prof/header'); ?>
 </head>
 
 <body>
@@ -10,7 +10,7 @@
         JavaScriptが無効です。JavaScriptを有効にして下さい。
     </noscript>
     <div class="body-wrapper">
-        <?php get_template_part('parts/front-page/header-nav'); ?>
+        <?php get_template_part('parts/page-prof/header-nav'); ?>
 
         <main class="main">
         </main><!-- /.main -->
@@ -130,10 +130,10 @@
                 </div><!-- /.sns-cont -->
             </div><!-- /.sns-inner -->
         </div><!-- /.sns -->
-        <?php get_template_part('parts/front-page/footer-nav'); ?>
+        <?php get_template_part('parts/page-prof/footer-nav'); ?>
         
     </div>
-    <?php get_template_part('parts/front-page/footer'); ?>
+    <?php get_template_part('parts/page-prof/footer'); ?>
 </body>
 
 </html>

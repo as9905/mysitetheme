@@ -101,6 +101,9 @@ a{
         line-height: 1.5;
         letter-spacing: 0.1em;
         margin-bottom: 1em;
+        &--end{
+            margin: 0;
+        }
     }
 }
 
