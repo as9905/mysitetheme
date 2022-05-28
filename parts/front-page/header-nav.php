@@ -5,6 +5,12 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/img/front-page/logo.png" alt="kayo's web site logo">
                     </h1><!-- /.header-logo -->
                 </a>
+                <?php
+                    $menu_name = 'global_nav';
+                    $locations = get_nav_menu_locations();
+                    $menu = wp_get_nav_menu_object($locations[$menu_name]);
+                    var_dump($menu);
+                ?>
                 <nav class="header-nav">
                     <ul class="header-nav__list">
                         <li class="header-nav__item header-nav__item--start"><a href="#about">当サイトについて</a></li>
