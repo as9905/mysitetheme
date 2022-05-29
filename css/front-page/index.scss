@@ -190,18 +190,15 @@ a{
     &-nav{
         &__list{
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             width: 550px;
             list-style-type: none;
             padding: 0;
         }
         &__item{
             color: $fontColor;
-            padding-left: 30px;
+            padding-left: 0;
 
-        }
-        &--start{
-            padding: 0;
         }
     }
     &-copyright{
