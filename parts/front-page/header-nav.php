@@ -13,11 +13,10 @@
 
                     $menu_items = wp_get_nav_menu_items($menu->term_id);
                 ?>
-
                 <nav class="header-nav">
                     <ul class="header-nav__list">
                         <?php foreach ($menu_items as $item): ?>
-                        <li class="header-nav__item"><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
+                        <li class="header-nav__item"><a href="<?php echo esc_attr($item->url); ?>"><?php echo esc_html($item->title); ?></a></li>
                         <!-- /.header-nav__item -->
                        <?php endforeach; ?>
                     </ul><!-- /.header-nav__list -->
