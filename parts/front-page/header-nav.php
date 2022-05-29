@@ -18,7 +18,7 @@
                     <ul class="header-nav__list">
                         <?php foreach ($menu_items as $item): ?>
                         <li class="header-nav__item"><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
-                        <!-- /.header-nav__item /.header-nav__item--start -->
+                        <!-- /.header-nav__item -->
                        <?php endforeach; ?>
                     </ul><!-- /.header-nav__list -->
                 </nav><!-- /.header-nav -->
