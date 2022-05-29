@@ -33,10 +33,11 @@ a{
             width: 550px;
             list-style-type: none;
             padding: 0;
+            justify-content: space-around;
         }
         &__item{
             color: $fontColor;
-            padding-left: 30px;
+            padding-left: 0;
 
         }
         &--start{

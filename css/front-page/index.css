@@ -36,10 +36,12 @@ a {
   width: 550px;
   list-style-type: none;
   padding: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .header-nav__item {
   color: #595B53;
-  padding-left: 30px;
+  padding-left: 0;
 }
 .header-nav--start {
   padding: 0;
