@@ -23,11 +23,13 @@
                     while(have_posts()):the_post();
             ?>
         <article class="blog">
-            <h1 class="blog-post__title"><?php the_title(); ?></h1><!-- /.blog-post__title -->
-            <div class="blog-post__content">
-                <?php the_content(); ?>
-            </div><!-- /.blog-post__content -->
+            <div class="blog-inner">
+                <h1 class="blog-post__title"><?php the_title(); ?></h1><!-- /.blog-post__title -->
+                <div class="blog-post__content">
+                    <?php the_content(); ?>
+                </div><!-- /.blog-post__content -->
+            </div><!-- /.blog-inner -->
         </article><!-- /.blog -->
         <?php endwhile; endif; ?>
         <?php get_template_part('parts/single/footer'); ?>
-    <!-- </div> -->
+    </div>
