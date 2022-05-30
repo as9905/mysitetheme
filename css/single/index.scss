@@ -37,7 +37,6 @@ a{
         &__item{
             color: $fontColor;
             padding-left: 0;
-
         }
         &--start{
             padding: 0;
@@ -45,17 +44,22 @@ a{
     }
 }
 .blog{
+    &-inner{
+        width: 960px;
+    }
     &-post{
         &__title{
-            padding: 20px 0;
+            padding: 0;
             color: $titleColor;
         }
         &__content{
             padding: 50px 0;
             color: $fontColor;
+            p{
+                text-align: left;
+            }
         }
     }
-
 }
 
 .footer{
