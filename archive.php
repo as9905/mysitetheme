@@ -2,7 +2,7 @@
 <html lang="ja">
 
 <head>
-    <?php get_template_part('parts/single/header'); ?>
+    <?php get_template_part('parts/archive/header'); ?>
 
 </head>
 
@@ -11,7 +11,7 @@
         JavaScriptが無効です。JavaScriptを有効にして下さい。
     </noscript>
     <div class="body-wrapper">
-        <?php get_template_part('parts/single/header-nav'); ?>
+        <?php get_template_part('parts/archive/header-nav'); ?>
         <ul class="post-list">
             <?php
             $args = array(
@@ -29,5 +29,5 @@
             wp_reset_postdata(); // 直前のクエリを復元する
             ?>
         </ul><!-- /.post-list -->
-        <?php get_template_part('parts/single/footer'); ?>
+        <?php get_template_part('parts/archive/footer'); ?>
         <!-- </div> -->
