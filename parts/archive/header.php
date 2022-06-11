@@ -19,6 +19,6 @@
         })(document);
     </script>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/archive/ress.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/archive/index_sp.css" media="screen and (max-width:590px)">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/archive/index.css" media="screen and (min-width:591px)">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/archive/archive_sp.css" media="screen and (max-width:590px)">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/archive/archive.css" media="screen and (min-width:591px)">
     <?php wp_head(); ?>
