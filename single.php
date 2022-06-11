@@ -31,5 +31,7 @@
             </div><!-- /.blog-inner -->
         </article><!-- /.blog -->
         <?php endwhile; endif; ?>
-        <?php get_template_part('parts/single/footer'); ?>
-    </div>
+        <?php get_template_part('parts/single/footer-nav'); ?>
+    </div><!-- /.body-wrapper -->
+    <?php get_template_part('parts/archive/footer.php') ?>
+</body>
