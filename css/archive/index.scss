@@ -1,0 +1,92 @@
+@charset "utf-8";
+$fontColor: #595B53;
+$titleColor: #9A7C2D;
+*{
+    font-family: m-plus-rounded-2p, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a{
+    text-decoration: underline;
+    color: $fontColor;
+}
+
+.header{
+    &-menu{
+        width: 1000px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-logo{
+       width: 414px;
+       height: auto;
+       img{
+           width: 100%;
+       }
+    }
+    &-nav{
+        &__list{
+            display: flex;
+            width: 550px;
+            list-style-type: none;
+            padding: 0;
+        }
+        &__item{
+            color: $fontColor;
+            padding-left: 0;
+        }
+        &--start{
+            padding: 0;
+        }
+    }
+}
+.blog{
+    &-inner{
+        width: 960px;
+    }
+    &-post{
+        &__title{
+            padding: 0;
+            color: $titleColor;
+        }
+        &__content{
+            padding: 50px 0;
+            color: $fontColor;
+            p{
+                text-align: left;
+            }
+        }
+    }
+}
+
+.footer{
+    &-inner{
+        padding-bottom: 150px;
+    }
+    &-nav{
+        &__list{
+            display: flex;
+            justify-content: center;
+            width: 550px;
+            list-style-type: none;
+            padding: 0;
+        }
+        &__item{
+            color: $fontColor;
+            padding-left: 30px;
+
+        }
+        &--start{
+            padding: 0;
+        }
+    }
+    &-copyright{
+        padding-top: 40px;
+        color: $fontColor;
+        line-height: 1.5;
+        letter-spacing: 0.1em;
+    }
+}
