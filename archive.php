@@ -29,5 +29,7 @@
             wp_reset_postdata(); // 直前のクエリを復元する
             ?>
         </ul><!-- /.post-list -->
-        <?php get_template_part('parts/archive/footer'); ?>
-        <!-- </div> -->
+        <?php get_template_part('parts/archive/footer-nav'); ?>
+    </div> <!-- /.body-wrapper -->
+    <?php get_template_part('parts/archive/footer.php') ?>
+</body>
