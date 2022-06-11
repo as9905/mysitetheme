@@ -36,15 +36,13 @@ a {
   width: 550px;
   list-style-type: none;
   padding: 0;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .header-nav__item {
   color: #595B53;
   padding-left: 0;
-}
-.header-nav--start {
-  padding: 0;
 }
 
 .main {
