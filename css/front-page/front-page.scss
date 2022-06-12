@@ -44,19 +44,21 @@ a{
 .blog{
     &-inner{
         width: 960px;
-        padding: 20px;
+        padding: 50px 0;
     }
     &-post{
+        text-align: left;
+        margin: 50px 50px;
+        border-right: 3px solid #595B53;
+        border-bottom: 3px solid #595B53;
+        padding: 0 20px 20px 0;
+
         &__title{
-            padding: 0;
             color: $titleColor;
+            text-align: left;
         }
-        &__content{
-            padding: 50px 0;
-            color: $fontColor;
-            p{
-                text-align: left;
-            }
+        &__date{
+            text-align: left;
         }
     }
 }
@@ -76,6 +78,10 @@ a{
         &__item{
             color: $fontColor;
             padding-left: 0;
+
+        }
+        &--start{
+            padding: 0;
         }
     }
     &-copyright{
