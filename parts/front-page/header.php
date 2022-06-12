@@ -19,6 +19,6 @@
         })(document);
     </script>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-page/ress.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-page/front-page_sp.css" media="screen and (max-width:590px)">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-page/front-page.css" media="screen and (min-width:591px)">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-pagefront-page_sp.css" media="screen and (max-width:590px)">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-pagefront-page.css" media="screen and (min-width:591px)">
     <?php wp_head(); ?>
