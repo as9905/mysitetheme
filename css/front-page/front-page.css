@@ -44,17 +44,20 @@ a {
 
 .blog-inner {
   width: 960px;
-  padding: 20px;
+  padding: 50px 0;
+}
+.blog-post {
+  text-align: left;
+  margin: 50px 50px;
+  border-right: 3px solid #595B53;
+  border-bottom: 3px solid #595B53;
+  padding: 0 20px 20px 0;
 }
 .blog-post__title {
-  padding: 0;
   color: #9A7C2D;
+  text-align: left;
 }
-.blog-post__content {
-  padding: 50px 0;
-  color: #595B53;
-}
-.blog-post__content p {
+.blog-post__date {
   text-align: left;
 }
 
@@ -75,6 +78,9 @@ a {
 .footer-nav__item {
   color: #595B53;
   padding-left: 0;
+}
+.footer-nav--start {
+  padding: 0;
 }
 .footer-copyright {
   padding-top: 40px;
