@@ -73,10 +73,7 @@ a {
 }
 .footer-nav__item {
   color: #595B53;
-  padding-left: 30px;
-}
-.footer-nav--start {
-  padding: 0;
+  padding-left: 0;
 }
 .footer-copyright {
   padding-top: 40px;
