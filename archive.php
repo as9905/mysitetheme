@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html <?php language_attributes(); ?>>
 
 <head>
     <?php get_template_part('parts/archive/header'); ?>
