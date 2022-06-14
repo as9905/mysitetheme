@@ -7,10 +7,7 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>>
-    <noscript>
-        JavaScriptが無効です。JavaScriptを有効にして下さい。
-    </noscript>
-    <div class="body-wrapper">
+        <div class="body-wrapper">
         <?php get_template_part('parts/front-page/header-nav'); ?>
         <div class="blog">
             <div class="blog-inner">
