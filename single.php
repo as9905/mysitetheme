@@ -13,6 +13,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>>
     <noscript>
         JavaScriptが無効です。JavaScriptを有効にして下さい。
     </noscript>

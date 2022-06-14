@@ -6,6 +6,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>>
     <div class="body-wrapper">
     <?php get_template_part('parts/page-animal/header-nav'); ?>
         <main class="main">
