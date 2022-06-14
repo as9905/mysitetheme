@@ -4,7 +4,7 @@
 <head>
     <?php get_template_part('/parts/page-cafe/header'); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
     <div class="wrapper">
         <?php get_template_part('parts/page-cafe/header-nav'); ?>
         <section class="concept" id="concept">

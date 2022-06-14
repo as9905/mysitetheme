@@ -3,7 +3,7 @@
 <head>
     <?php get_template_part('/parts/page-prof_lp/header'); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
     <?php get_template_part('/parts/page-prof_lp/header-nav'); ?>
     <section class="about" id="about">
         <div class="about-inner">

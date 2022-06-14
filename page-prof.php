@@ -5,7 +5,7 @@
     <?php get_template_part('parts/page-prof/header'); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <noscript>
         JavaScriptが無効です。JavaScriptを有効にして下さい。
     </noscript>

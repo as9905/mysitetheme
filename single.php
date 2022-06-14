@@ -12,7 +12,7 @@
     </style>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <noscript>
         JavaScriptが無効です。JavaScriptを有効にして下さい。
     </noscript>

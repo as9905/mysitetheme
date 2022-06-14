@@ -5,7 +5,7 @@
     <?php get_template_part('parts/page-animal/header'); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <div class="body-wrapper">
     <?php get_template_part('parts/page-animal/header-nav'); ?>
         <main class="main">
