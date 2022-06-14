@@ -14,10 +14,7 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>>
-    <noscript>
-        JavaScriptが無効です。JavaScriptを有効にして下さい。
-    </noscript>
-    <div class="body-wrapper">
+        <div class="body-wrapper">
         <?php get_template_part('parts/single/header-nav'); ?>
         <?php
                 if(have_posts()):
