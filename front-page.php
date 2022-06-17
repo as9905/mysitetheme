@@ -19,8 +19,10 @@
                 ?>
                     <?php while (have_posts()) : the_post(); ?>
                         <article class="blog-post">
-                            <h2 class="blog-post__title"><?php the_title(); ?></h2><!-- /.post-title -->
-                            <p class="blog-post__date"><?php the_time(get_option('date_format')); ?></p>
+                            <div class="blog-post__heading">
+                                <h2 class="blog-post__title"><?php the_title(); ?></h2><!-- /.post-title -->
+                                <p class="blog-post__date"><?php the_time(get_option('date_format')); ?></p>
+                            </div>
                         </article>
                     <?php endwhile; ?>
                 <?php else : ?>
