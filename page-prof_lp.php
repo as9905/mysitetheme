@@ -4,7 +4,7 @@
     <?php get_template_part('/parts/page-prof_lp/header'); ?>
 </head>
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>>
+<?php wp_body_open(); ?>
     <?php get_template_part('/parts/page-prof_lp/header-nav'); ?>
     <section class="about" id="about">
         <div class="about-inner">

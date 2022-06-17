@@ -13,7 +13,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>>
+<?php wp_body_open(); ?>
         <div class="body-wrapper">
         <?php get_template_part('parts/single/header-nav'); ?>
         <?php
