@@ -19,12 +19,12 @@
                 ?>
                     <?php while (have_posts()) : the_post(); ?>
                         <article class="blog-post">
+                            <a href="<?php the_permalink(); ?>" class="blog-post__link"></a>
                             <div class="blog-post__heading">
                                 <h2 class="blog-post__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2><!-- /.post-title -->
                                 <p class="blog-post__date"><?php the_time(get_option('date_format')); ?></p>
                             </div>
                                 <p class="blog-post__excerpt"><?php echo get_the_excerpt(); ?></p>
-                            
                         </article><!-- /.blog-post -->
                     <?php endwhile; ?>
                 <?php else : ?>
