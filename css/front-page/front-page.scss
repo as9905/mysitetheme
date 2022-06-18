@@ -47,29 +47,35 @@ a{
         padding: 50px 0;
     }
     &-post{
-        text-align: left;
         padding: 50px;
         margin: 40px 0;
         border: 1px solid #3f3e3e;
         box-shadow: 2px 2px 5px 0 #3f3e3e;
 
         &__heading{
-            border-left: 5px solid #9c6d3b;
-            border-bottom: 5px solid #9c6d3b;
-            margin: 0 0 30px 0;
-            padding: 15px 0 15px 50px;
+            
         }
         
         &__title{
             color: $titleColor;
             text-align: left;
-        }
-        &__excerpt{
-            color: #3f3e3e;
-            text-align: left;
+            border-left: 5px solid #9c6d3b;
+            border-bottom: 5px solid #9c6d3b;
+            margin: 0 0 30px 0;
+            padding: 15px 0 15px 50px;
+
+            & a{
+                display: block;
+                text-align: left;
+            }
         }
 
         &__date{
+            text-align: right;
+            padding-bottom: 30px;
+        }
+
+        &__excerpt{
             text-align: left;
         }
     }
