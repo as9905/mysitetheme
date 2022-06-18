@@ -31,7 +31,11 @@
                     <p>記事がありません</p>
                 <?php endif; ?>
             </div><!-- /.blog-inner -->
-            </div><!-- /.blog -->
+            <div class="blog-pager">
+                <a href="#" class="blog-pager__btn pager-btn__left">≪</a><!-- /.blog-pager__btn /.pager-btn__left  -->
+                <a href="#" class="blog-pager__btn pager-btn__right">≫</a><!-- /.blog-pager__btn /.pager-btn__right -->
+            </div><!-- /.blog-pager -->
+        </div><!-- /.blog -->        
         <?php get_template_part('parts/front-page/footer-nav'); ?>
     </div> <!-- /.body-wrapper -->
     <?php get_template_part('parts/front-page/footer'); ?>

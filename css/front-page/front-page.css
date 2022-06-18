@@ -1,7 +1,6 @@
 * {
   font-family: m-plus-rounded-2p, sans-serif;
   margin: 0 auto;
-  text-align: center;
 }
 
 a {
@@ -83,6 +82,23 @@ a {
 .blog-post__excerpt {
   text-align: left;
 }
+.blog-pager {
+  text-align: left;
+  width: 960px;
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blog-pager__btn {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: #9A7C2D;
+}
 
 .footer-inner {
   padding-bottom: 150px;
@@ -102,10 +118,8 @@ a {
   color: #595B53;
   padding-left: 0;
 }
-.footer-nav--start {
-  padding: 0;
-}
 .footer-copyright {
+  text-align: center;
   padding-top: 40px;
   color: #595B53;
   line-height: 1.5;
