@@ -3,7 +3,6 @@ $fontColor: #595B53;
 $titleColor: #9A7C2D;
 *{
     font-family: m-plus-rounded-2p, sans-serif;
-    margin: 0 auto;
 }
 
 a{
@@ -13,6 +12,7 @@ a{
 
 .header{
     &-menu{
+        margin: 0 auto;
         width: 1000px;
         height: 100px;
         display: flex;
@@ -29,6 +29,7 @@ a{
     &-nav{
         &__list{
             display: flex;
+            justify-content: space-between;
             width: 550px;
             list-style-type: none;
             padding: 0;
@@ -42,6 +43,7 @@ a{
 
 .blog{
     &-inner{
+        margin: 0 auto;
         width: 960px;
         padding: 50px 0;
     }
@@ -87,16 +89,15 @@ a{
         }
     }
     &-pager{
-        text-align: left;
         width: 960px;
-        padding: 40px 0;
+        margin: 0 auto;
         display: flex;
-        justify-content: center;
-
+        justify-content: space-between;
+        padding: 40px 0;
         &__btn{
-            display: block;
             width: 100px;
             height: 50px;
+            padding: 10px;
             background-color: #9A7C2D; 
         }
     }
@@ -108,8 +109,9 @@ a{
     }
     &-nav{
         &__list{
+            margin: 0 auto;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             width: 550px;
             list-style-type: none;
             padding: 0;
