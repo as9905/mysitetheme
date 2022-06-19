@@ -32,8 +32,8 @@
                 <?php endif; ?>
             </div><!-- /.blog-inner -->
             <div class="blog-pager">
-                <a href="#" class="blog-pager__btn pager-btn__left">≪</a><!-- /.blog-pager__btn /.pager-btn__left  -->
-                <a href="#" class="blog-pager__btn pager-btn__right">≫</a><!-- /.blog-pager__btn /.pager-btn__right -->
+                <a href="#" class="blog-pager__btn pager-btn__left">≪　新しい記事へ</a><!-- /.blog-pager__btn /.pager-btn__left  -->
+                <a href="#" class="blog-pager__btn pager-btn__right">古い記事へ　≫</a><!-- /.blog-pager__btn /.pager-btn__right -->
             </div><!-- /.blog-pager -->
         </div><!-- /.blog -->        
         <?php get_template_part('parts/front-page/footer-nav'); ?>

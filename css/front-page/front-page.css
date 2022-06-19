@@ -98,10 +98,21 @@ a {
   padding: 40px 0;
 }
 .blog-pager__btn {
-  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
   height: 50px;
   padding: 10px;
-  background-color: #9A7C2D;
+}
+.blog-pager a {
+  text-underline-position: underline;
+  text-underline-offset: 5px;
+  -webkit-text-decoration-color: #e4ccd7;
+          text-decoration-color: #e4ccd7;
 }
 
 .footer-inner {
