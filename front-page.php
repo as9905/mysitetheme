@@ -36,7 +36,7 @@
                     $link = get_previous_posts_link('≪　新しい記事へ');
                     if($link){
                         $link = str_replace('<a', '<a class="blog-pager__btn pager-btn__left"', $link);
-                        $linkCommentout = str_replace('/a>', '/a><!-- /.blog-pager__btn /.pager-btn__left  -->', $linkCommentout);
+                        $link = str_replace('/a>', '/a><!-- /.blog-pager__btn /.pager-btn__left -->', $link);
                         echo $link;
                     }
                 ?>
@@ -44,7 +44,7 @@
                     $link = get_next_posts_link('古い記事へ　≫');
                     if($link){
                         $link = str_replace('<a', '<a class="blog-pager__btn pager-btn__right"', $link);
-                        $linkCommentout = str_replace('/a>', '/a><!-- /.blog-pager__btn /.pager-btn__right  -->', $linkCommentout);
+                        $link = str_replace('/a>', '/a><!-- /.blog-pager__btn /.pager-btn__right -->', $link);
                         echo $link;
                     }
                 ?>
