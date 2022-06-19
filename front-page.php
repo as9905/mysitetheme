@@ -32,8 +32,22 @@
                 <?php endif; ?>
             </div><!-- /.blog-inner -->
             <div class="blog-pager">
-                <a href="#" class="blog-pager__btn pager-btn__left">≪</a><!-- /.blog-pager__btn /.pager-btn__left  -->
-                <a href="#" class="blog-pager__btn pager-btn__right">≫</a><!-- /.blog-pager__btn /.pager-btn__right -->
+                <?php
+                    $link = get_previous_posts_link('≪　新しい記事へ');
+                    if($link){
+                        $link = str_replace('<a', '<a class="blog-pager__btn pager-btn__left"', $link);
+                        $linkCommentout = str_replace('/a>', '/a><!-- /.blog-pager__btn /.pager-btn__left  -->', $linkCommentout);
+                        echo $link;
+                    }
+                ?>
+                <?php
+                    $link = get_next_posts_link('古い記事へ　≫');
+                    if($link){
+                        $link = str_replace('<a', '<a class="blog-pager__btn pager-btn__right"', $link);
+                        $linkCommentout = str_replace('/a>', '/a><!-- /.blog-pager__btn /.pager-btn__right  -->', $linkCommentout);
+                        echo $link;
+                    }
+                ?>
             </div><!-- /.blog-pager -->
         </div><!-- /.blog -->        
         <?php get_template_part('parts/front-page/footer-nav'); ?>

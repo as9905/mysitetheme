@@ -1,6 +1,5 @@
 * {
   font-family: m-plus-rounded-2p, sans-serif;
-  margin: 0 auto;
 }
 
 a {
@@ -9,6 +8,7 @@ a {
 }
 
 .header-menu {
+  margin: 0 auto;
   width: 1000px;
   height: 100px;
   display: -webkit-box;
@@ -32,6 +32,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 550px;
   list-style-type: none;
   padding: 0;
@@ -42,6 +45,7 @@ a {
 }
 
 .blog-inner {
+  margin: 0 auto;
   width: 960px;
   padding: 50px 0;
 }
@@ -83,33 +87,38 @@ a {
   text-align: left;
 }
 .blog-pager {
-  text-align: left;
   width: 960px;
-  padding: 40px 0;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 40px 0;
 }
 .blog-pager__btn {
-  display: block;
-  width: 100px;
-  height: 50px;
-  background-color: #9A7C2D;
+  padding: 10px;
+}
+.blog-pager a {
+  text-underline-position: underline;
+  text-underline-offset: 2px;
+  -webkit-text-decoration-color: #e4ccd7;
+          text-decoration-color: #e4ccd7;
+  text-decoration-thickness: 5px;
 }
 
 .footer-inner {
   padding-bottom: 150px;
 }
 .footer-nav__list {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 550px;
   list-style-type: none;
   padding: 0;
