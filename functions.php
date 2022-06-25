@@ -3,3 +3,4 @@
     locate_template('functions/customPost.php',true );  //カスタム投稿設定
     locate_template('functions/gutenberg.php', true);   //グーテンベルク設定
     locate_template('functions/globalNavigation.php',true); //グローバルナビ設定
+    locate_template('functions/pageNation.php', true);      //ページネーション設定
