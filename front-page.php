@@ -54,5 +54,4 @@
     </div> <!-- /.body-wrapper -->
     <?php get_template_part('parts/front-page/footer'); ?>
 </body>
-
 </html>
