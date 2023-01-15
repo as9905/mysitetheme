@@ -34,20 +34,18 @@
             <div class="blog-pager">
                 <?php
                 $link = get_previous_posts_link('≪　新しい記事へ');
-                if ($link) {
+                if ($link) :
                     $link = str_replace('<a', '<a class="blog-pager__btn pager-btn__left"', $link);
                     $link = str_replace('/a>', '/a><!-- /.blog-pager__btn /.pager-btn__left -->', $link);
                     echo $link;
-                }
-                ?>
+                endif; ?>
                 <?php
                 $link = get_next_posts_link('古い記事へ　≫');
-                if ($link) {
+                if ($link) :
                     $link = str_replace('<a', '<a class="blog-pager__btn pager-btn__right"', $link);
                     $link = str_replace('/a>', '/a><!-- /.blog-pager__btn /.pager-btn__right -->', $link);
                     echo $link;
-                }
-                ?>
+                endif; ?>
             </div><!-- /.blog-pager -->
         </div><!-- /.blog -->
         <?php get_template_part('parts/front-page/footer-nav'); ?>
