@@ -15,8 +15,7 @@
                 $args = array(
                     'posts_per_page' => 5 // 表示件数の指定
                 );
-                if (have_posts()) :
-                    ?>
+                if (have_posts()) : ?>
                         <?php while (have_posts()) : the_post(); ?>
                             <article class="blog-post">
                                 <a href="<?php the_permalink(); ?>" class="blog-post__link"></a>
