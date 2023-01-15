@@ -38,16 +38,21 @@
                     $link = str_replace('<a', '<a class="blog-pager__btn pager-btn__left"', $link);
                     $link = str_replace('/a>', '/a><!-- /.blog-pager__btn /.pager-btn__left -->', $link);
                     echo $link;
+ feature_archive.php
+                endif; ?>
                 endif;
                 ?>
+                main
                 <?php
                 $link = get_next_posts_link('古い記事へ　≫');
                 if ($link) :
                     $link = str_replace('<a', '<a class="blog-pager__btn pager-btn__right"', $link);
                     $link = str_replace('/a>', '/a><!-- /.blog-pager__btn /.pager-btn__right -->', $link);
                     echo $link;
+eature_archive.php
+                endif; ?>
                 endif; 
-                ?>
+                ?>main
             </div><!-- /.blog-pager -->
         </div><!-- /.blog -->
         <?php get_template_part('parts/front-page/footer-nav'); ?>
