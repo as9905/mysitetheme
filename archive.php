@@ -35,6 +35,6 @@
             </div><!-- /.blog-inner -->
         </div><!-- /.blog -->
         <?php get_template_part('parts/archive/footer-nav'); ?>
-    </div> <!-- /.body-wrapper -->
+    </div> <!-- /.body-wrapper -- test>
     <?php get_template_part('parts/archive/footer.php') ?>
 </body>
